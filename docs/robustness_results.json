@@ -1,0 +1,68 @@
+{
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "image_size": [
+    1600,
+    1000
+  ],
+  "profile": "strong",
+  "note": "单张虚构样图的数字实验；没有进行真实打印、扫描或复印验证。",
+  "combined_visible_and_hidden_psnr_db": 27.56,
+  "cases": [
+    {
+      "case": "original_png",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "jpeg_quality_85",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "grayscale",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "black_white_threshold_170",
+      "watermark_recovered": false,
+      "error": "纠错失败：未能恢复可信水印。请核对密码、凭据和图像校正。"
+    },
+    {
+      "case": "rotation_1_degree_without_sync",
+      "watermark_recovered": false,
+      "error": "纠错失败：未能恢复可信水印。请核对密码、凭据和图像校正。"
+    },
+    {
+      "case": "resize_75_percent_then_restore",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "mild_blur_and_noise_digital_only",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "stronger_blur_brightness_noise_jpeg_digital_only",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "scan_border_without_alignment",
+      "watermark_recovered": false,
+      "error": "纠错失败：未能恢复可信水印。请核对密码、凭据和图像校正。"
+    },
+    {
+      "case": "scan_border_with_exact_four_corners",
+      "watermark_recovered": true,
+      "corrected_bytes": 0
+    },
+    {
+      "case": "unmarked_negative_control",
+      "watermark_recovered": false,
+      "error": "水印格式校验失败，不能据此认定存在水印。"
+    }
+  ]
+}

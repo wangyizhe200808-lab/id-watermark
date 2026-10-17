@@ -1,0 +1,7 @@
+include README.md LICENSE THIRD_PARTY_NOTICES.md requirements*.txt app.py
+include install_windows.bat start_windows.bat
+recursive-include licenses *.txt
+recursive-include docs *.json *.md
+recursive-include examples *.png *.json
+recursive-include scripts *.py
+recursive-include tests *.py

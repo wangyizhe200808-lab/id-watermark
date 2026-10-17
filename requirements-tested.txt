@@ -1,0 +1,7 @@
+# Validated on Linux x86_64 / Python 3.12.14; not a universal dependency lock.
+Pillow==12.3.0
+numpy==2.3.5
+opencv-python==5.0.0.93
+PyWavelets==1.10.0
+blind-watermark==0.4.4
+reedsolo==1.7.0

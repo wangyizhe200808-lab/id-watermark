@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-id-watermark"
+version = "0.1.0"
+description = "Offline visible and frequency-domain watermarks for private document copies"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "Pillow>=10.4,<13",
+  "numpy>=1.26,<3",
+  "opencv-python>=4.8,<6",
+  "PyWavelets>=1.5,<2",
+  "blind-watermark==0.4.4",
+  "reedsolo==1.7.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1"]
+
+[project.scripts]
+id-watermark = "id_watermark.cli:main"
+id-watermark-gui = "id_watermark.gui:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*.txt"]
+
+[tool.setuptools.packages.find]
+include = ["id_watermark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,40 @@
+{
+  "schema": "local-id-watermark-receipt-v1",
+  "app_version": "0.1.0",
+  "created_utc": "2026-10-17T08:18:30+00:00",
+  "image_size": [
+    1600,
+    1000
+  ],
+  "recipient_note": "公开演示，非真实外发",
+  "visible": {
+    "text": "仅限办理供热入户手续使用",
+    "layout": "tile",
+    "font_size": 40,
+    "opacity": 0.27,
+    "angle": -25,
+    "gap_x": 110,
+    "gap_y": 100,
+    "x": 0.5,
+    "y": 0.5,
+    "color": "#b02232",
+    "font_path": "(system CJK font used for public demo)"
+  },
+  "frequency": {
+    "algorithm": "luma-dwt-dct-svd-v1",
+    "salt": "f73113a3b211826403736c22f20c7e4f",
+    "trace_id": "3c3fd4e97bcc1a19",
+    "profile": "strong",
+    "d1": 64,
+    "d2": 32,
+    "parity_bytes": 48,
+    "packet_bits": 1032,
+    "repeat_count": 24
+  },
+  "self_check": {
+    "passed": true,
+    "corrected_bytes": 0
+  },
+  "output_sha256": "18175bd3cfc3aa96a59c03e9310e47cfe7b1b6700f51d3582c76317f203abf63",
+  "trace_id": "3c3fd4e97bcc1a19"
+}
